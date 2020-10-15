@@ -1,43 +1,6 @@
-from flask import render_template, url_for, request
+from flask import render_template, send_from_directory, request
 from app import app
-
-members = [
-        {
-            'name': 'Dyani Dillard',
-            'headshot': 'static/img/dyani_photo.jpg',
-            'title': 'Co-President'
-        },
-        {
-            'name': 'Joey Rose',
-            'headshot': 'static/img/joey_photo.jpg',
-            'title': 'Co-President'
-        },
-        {
-            'name': 'Scott Morris',
-            'headshot': 'static/img/scott_photo.jpeg',
-            'title': 'Head of Events'
-        },
-        {
-            'name': 'Tammie Oh',
-            'headshot': 'static/img/tammy_photo.JPG',
-            'title': 'Marketing & Finance'
-        },
-        {
-            'name': 'Ruth Schlosser',
-            'headshot': 'static/img/ruth_photo.jpg',
-            'title': 'Head of Projects'
-        },
-        {
-            'name': 'Ali Mian',
-            'headshot': 'static/img/ali_photo.jpg',
-            'title': 'Local Engagement'
-        },
-        {
-            'name': 'Jasmine Reyes',
-            'headshot': 'static/img/jasmine_photo.jpg',
-            'title': 'Community Outreach'
-        }
-    ]
+import json
 
 # Main site pages
 
@@ -47,6 +10,10 @@ def homepage():
 
 @app.route('/about')
 def aboutpage():
+    
+    with open('app/members.json') as membersfile:
+        members = json.load(membersfile)
+
     return render_template('pages/about.html', members=members)
 
 @app.route('/events')
@@ -65,11 +32,15 @@ def resourcespage():
 
 @app.route('/robots.txt')
 def robotstxtpage():
-    return url_for('static', filename='robots.txt')
+    return send_from_directory('static', filename='robots.txt')
 
 @app.route('/favicon.ico')
 def faviconpage():
-    return url_for('static', filename='favicon.png')
+    return send_from_directory('static', filename='favicon.ico')
+
+@app.route('/qa.pdf')
+def qapdfpage():
+    return send_from_directory('static', filename='qa.pdf')
 
 # Error handling
 

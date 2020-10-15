@@ -5,7 +5,9 @@
   <div id="eboard">
     {% for member in members %}
       <div class="member">
-        <img class="headshot" src="{{ member.headshot }}"></img>
+        <a href="{{ member.ig_eboard }}">
+         <img class="headshot" src="{{ member.headshot }}"></img>
+        </a>
         <br>
         {{ member.name }}
         <br>

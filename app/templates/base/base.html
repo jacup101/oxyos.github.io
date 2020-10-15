@@ -15,69 +15,82 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-      </div>
+      <div class="container-fluid nav-container">
+
+        <a class="navbar-brand" href="/">
+          <img class="logo" src="static/img/oxyosLogo.jpg">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto mr-5">
+            <li class="nav-item active">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/resources">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-img" href="https://join.slack.com/t/oxyos/signup"><img class="img-fluid" src="static/img/slack.svg"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-img" href="https://github.com/oxyos"><img class="img-fluid" src="static/img/GitHub-Mark-120px-plus.png"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-img" href="https://www.facebook.com/oxyopensourceclub"><img class="img-fluid" src="static/img/f_logo_RGB-Blue_114.png"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-img" href="https://www.instagram.com/oxyopensource/"><img class="img-fluid" src="static/img/IG_Glyph_Fill.png"></a>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+
     </nav>
 
-    <!-- <div id="header">
-      <a href="/"><img id="logo" src="static/img/oxyosLogo.jpg"></a>
-      <div class="spacer"></div>
-      <div id="nav">
-        <a class="nav-item" href="/contact">Contact</a>
-        <a class="nav-item" href="/about">About Us</a>
-        <a class="nav-item" href="/resources">Resources</a>
-        <a class="nav-item" href="/events">Events</a>
-      </div>
-    </div> -->
+      <div class="row flex-grow-1 flex-shrink-1 m-0">
+        <div class="col-8 offset-2 my-auto">
+          <div class="content-box text-center">
+            
+            {% block content %}{% endblock %}
 
-    <div class="content">
-      <div class="spacer"></div>
-      <div id="body-column">
-        
-        {% block content %}{% endblock %}
+          </div>
+        </div>
+      </div>
 
+    <footer class="row p-2 m-0">
+      <div class="col-10 offset-1">
+        <div class="row">
+          <div class="col-6 text-opensource">
+            <span class="text-highlight">Open</span>Source
+          </div>
+          <div class="col-6 my-auto text-right" style="color: rgba(255,255,255,.60);">
+            1600 Campus Road <br> Los Angeles, CA, 90041
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 py-auto">
+            Occidental College
+          </div>
+          <div class="col-6 text-right">
+            <a class="email-link" href="mailto:opensource@oxy.edu">opensource@oxy.edu</a>
+          </div>
+        </div>
       </div>
-      <div class="spacer"></div>
-    </div>
-    <div id="footer">
-      <div id="social-media">
-        <p id="wordmark" class="wordmark"><span>Open</span>Source</p>
-        <p id="occidental">Occidental College</p>
-        <p id="social-links">
-        <a href="https://www.facebook.com/oxyopensourceclub"><img src="static/img/facebook.jpg"></a>
-        <a href="https://www.instagram.com/oxyopensource/"><img src="static/img/instagram.jpg"></a>
-        <a href="https://join.slack.com/t/oxyos/signup"><img src="static/img/slack.svg"></a>
-        <a href="https://github.com/oxyos"><img src="static/img/github.jpg"></a>
-        </p>
-      </div>
-      <div class="spacer"></div>
-      <div id="contact">
-        <p>1600 Campus Road</p>
-        <p>Los Angeles, CA</p>
-        <p>90041</p>
-        <p><a href="mailto:opensource@oxy.edu">opensource@oxy.edu</a></p>
-      </div>
-    </div>
+      
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

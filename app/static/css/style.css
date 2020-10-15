@@ -5,48 +5,91 @@
     flex-grow:1;
 }
 
-.wordmark span {
+.text-highlight {
     color: #f26739;
+}
+
+.text-spacer {
+    margin-left: 8px;
 }
 
 body {
     margin:0;
     background-image: url('../img/2018-0608_JacarandaTrees-07.png');
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
 }
 
-
-#body {
-    text-align: center;
-    font-size: 24px;
-    flex:1;
-    display:flex;
-    flex-direction:column
+nav {
+    background-color: #fffffd;
 }
-#body-column{
-    width: 75%;
-    margin: auto;
+
+.nav-img {
+    padding: auto 0;
+    display: block;
+    width: 3.25vh;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.nav-container {
+    padding: 0 10vw 0 10vw;
+}
+
+.nav-item {
+    margin: 0 1rem 0 1rem;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.email-link {
+    color: #f26739;
+}
+
+.logo {
+    /* height: 6vh; */
+    height: 50%;
+    width: 50%;
+}
+
+.mission-statement {
+    font-size: 1.25rem;
+}
+
+.content-box{
+    min-height: 30vh;
+    border-radius: 5px;
     background: #ffffffc0;
 }
 
-#footer {
-    display:flex;
-    align-items:center;
+footer {
     color:#ffffff;
-    bottom:0;
     background-color: #2d2e2e;
-    width:100%;
 }
+
+.text-opensource {
+    font-size: 2rem;
+}
+
 #social-media {
     margin-left:1em;
 }
-#wordmark {
-    font-size:32px;
-    margin:0;
-}
-.wordmark {
-    /* font-family: 'Nunito', sans-serif; */
+
+.landing-text {
     font-family: 'Montserrat', sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100px;
+    text-align: center;
+    display: inline-block;
 }
+
 #occidental {
 
     font-weight: lighter;
@@ -73,19 +116,7 @@ body {
 }
 
 /* --- index.html --- */
-#splash {
-    font-size: 50px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin:auto;
-    text-align:left;
-    line-height: 100px;
-    text-align: center;
-}
 
-.homeText {
-    text-align: center;
-}
 
 /* --- about.html --- */
 #eboard .member {
