@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+  <p>Our mission is to create an inclusive and collaborative community around Computer Science and provide resources and opportunities for all Oxy students</p>
+  <div id="eboard">
+    {% for member in members %}
+      <div class="member">
+        <img class="headshot" src="{{ member.headshot }}"></img>
+        <br>
+        {{ member.name }}
+        <br>
+        <span class="title">{{ member.title }}</span>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
