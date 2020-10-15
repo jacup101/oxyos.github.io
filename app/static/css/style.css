@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* General elements */
+
 .spacer {
     flex-grow:1;
-}
-
-.text-highlight {
-    color: #f26739;
-}
-
-.text-spacer {
-    margin-left: 8px;
 }
 
 body {
@@ -27,35 +21,67 @@ nav {
     background-color: #fffffd;
 }
 
-.nav-img {
-    padding: auto 0;
-    display: block;
-    width: 3.25vh;
-    margin: 0.5rem 0 0.5rem 0;
+/* Global Formating */
+
+.text-highlight {
+    color: #f26739;
 }
 
-.nav-container {
-    padding: 0 10vw 0 10vw;
+/* Navigation bar */
+
+.nav-img {
+    display: block;
+    width: 5rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .nav-img {
+        width: 3rem;
+    }
+}
+
+@media (min-width: 968px) {
+    .nav-img {
+        width: 1.8rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .nav-img {
+        width: 2rem;
+    }
 }
 
 .nav-item {
-    margin: 0 1rem 0 1rem;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .nav-item {
+        margin: 0 0.5rem;
+    }
 }
 
 .nav-link {
+    padding: auto 0;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.email-link {
-    color: #f26739;
+@media (min-width: 768px) {
+    .nav-link {
+        font-size: 1rem;
+    }
 }
 
-.logo {
-    /* height: 6vh; */
-    height: 50%;
-    width: 50%;
+.navbar-brand {
+    display: block;
+    width: 3.25rem;
 }
+
+/* Content Area */
 
 .mission-statement {
     font-size: 1.25rem;
@@ -67,6 +93,8 @@ nav {
     background: #ffffffc0;
 }
 
+/* Footer */
+
 footer {
     color:#ffffff;
     background-color: #2d2e2e;
@@ -76,9 +104,7 @@ footer {
     font-size: 2rem;
 }
 
-#social-media {
-    margin-left:1em;
-}
+/* Home Page */
 
 .landing-text {
     font-family: 'Montserrat', sans-serif;
@@ -90,43 +116,49 @@ footer {
     display: inline-block;
 }
 
-#occidental {
-
-    font-weight: lighter;
-    text-transform: uppercase;
-    opacity: 0.6;
-    font-size:18px;
-    margin:0;
-}
-#social-links img {
-    height: 2em;
-    width: 2em;
-    border-radius: 50%;
-    opacity:0.3;
-}
-#contact {
-    text-align:right;
-    font-size: 16px;
-    font-weight: 100;
-    font-family: sans-serif;
-    margin-right:1em;
-}
-#contact a {
-    color:#ffffff;
+@media (max-width: 575.98px) {
+    .landing-text {
+        font-size: 5rem;
+    }
 }
 
-/* --- index.html --- */
+@media (max-width: 375.98px) {
+    .landing-text {
+        font-size: 3.5rem;
+    }
+}
 
+.text-spacer { /* Literally just because the kerning on some of the letters looks bad */
+    margin-left: 8px;
+}
 
-/* --- about.html --- */
-#eboard .member {
+/* Events Page */
+
+.iframe-container {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* About Page */
+.eboard .member {
     display:inline-block;
 }
-#eboard .headshot {
+.headshot {
     width: 250px;
     height: 250px;
 }
-#eboard .title {
+.title {
     font-style: italic;
 }
 

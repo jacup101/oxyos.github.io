@@ -1,18 +1,23 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-  <p>Our mission is to create an inclusive and collaborative community around Computer Science and provide resources and opportunities for all Oxy students</p>
-  <div id="eboard">
-    {% for member in members %}
-      <div class="member">
-        <a href="{{ member.ig_eboard }}">
-         <img class="headshot" src="{{ member.headshot }}"></img>
+  <div class="mission-statement py-2">
+    Our mission is to create an inclusive and collaborative community around Computer Science and provide resources and opportunities for all Oxy students
+  </div>
+  
+  <div class="eboard container-fluid px-4">
+    <div class="row justify-content-center">
+      {% for member in members %}
+      <div class="col-6 col-sm-4col-lg-3 col-xl-2 member px-0">
+        <a class="headshot" href="{{ member.ig_eboard }}">
+         <img class="img-fluid" src="{{ member.headshot }}"></img>
         </a>
-        <br>
         {{ member.name }}
-        <br>
-        <span class="title">{{ member.title }}</span>
+        <div class="title">
+          {{ member.title }}
+        </div>
       </div>
     {% endfor %}
+    </div>
   </div>
 {% endblock %}

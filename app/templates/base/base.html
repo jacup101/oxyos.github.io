@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% if title %} <!-- Tests if a title exists, and adds it to the title if found -->
     <title>Oxy Open Source - {{ title }}</title>
@@ -15,53 +17,60 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
 
-      <div class="container-fluid nav-container">
+    <nav class="navbar navbar-expand-lg navbar-light px-5">
 
-        <a class="navbar-brand" href="/">
-          <img class="logo" src="static/img/oxyosLogo.jpg">
-        </a>
+      <div class="col-10 offset-1">
+        <div class="row">
+          <a class="navbar-brand" href="/">
+            <img class="img-fluid" src="static/img/oxyosLogo.jpg">
+          </a>
+    
+          <button class="navbar-toggler ml-auto my-auto p-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/resources">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/events">Events</a>
+              </li>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+              <div class="row m-3 m-sm-0 py-2">
+                <div class="col-sm d-lg-none"></div>
+                <li class="nav-item col-3 col-sm mx-0 mx-lg-2 p-0">
+                  <a class="nav-img" href="https://join.slack.com/t/oxyos/signup"><img class="img-fluid" src="static/img/slack.svg"></a>
+                </li>
+                <li class="nav-item col-3 col-sm mx-0 mx-lg-2 p-0">
+                  <a class="nav-img" href="https://github.com/oxyos"><img class="img-fluid" src="static/img/GitHub-Mark-120px-plus.png"></a>
+                </li>
+                <li class="nav-item col-3 col-sm mx-0 mx-lg-2 p-0">
+                  <a class="nav-img" href="https://www.facebook.com/oxyopensourceclub"><img class="img-fluid" src="static/img/f_logo_RGB-Blue_114.png"></a>
+                </li>
+                <li class="nav-item col-3 col-sm mx-0 mx-lg-2 p-0">
+                  <a class="nav-img" href="https://www.instagram.com/oxyopensource/"><img class="img-fluid" src="static/img/IG_Glyph_Fill.png"></a>
+                </li>
+                <div class="col-sm d-lg-none"></div>
+              </div>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto mr-5">
-            <li class="nav-item active">
-              <a class="nav-link" href="/contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/resources">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/events">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-img" href="https://join.slack.com/t/oxyos/signup"><img class="img-fluid" src="static/img/slack.svg"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-img" href="https://github.com/oxyos"><img class="img-fluid" src="static/img/GitHub-Mark-120px-plus.png"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-img" href="https://www.facebook.com/oxyopensourceclub"><img class="img-fluid" src="static/img/f_logo_RGB-Blue_114.png"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-img" href="https://www.instagram.com/oxyopensource/"><img class="img-fluid" src="static/img/IG_Glyph_Fill.png"></a>
-            </li>
-          </ul>
+            </ul>
+          </div>
         </div>
-
-    </div>
+      </div>
 
     </nav>
 
       <div class="row flex-grow-1 flex-shrink-1 m-0">
-        <div class="col-8 offset-2 my-auto">
+        <div class="col-12 col-md-8 offset-0 offset-md-2 my-auto">
           <div class="content-box text-center">
             
             {% block content %}{% endblock %}
@@ -72,22 +81,24 @@
 
     <footer class="row p-2 m-0">
       <div class="col-10 offset-1">
+
         <div class="row">
-          <div class="col-6 text-opensource">
-            <span class="text-highlight">Open</span>Source
-          </div>
-          <div class="col-6 my-auto text-right" style="color: rgba(255,255,255,.60);">
-            1600 Campus Road <br> Los Angeles, CA, 90041
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 py-auto">
+          <div class="col-12 col-sm-6 text-center text-sm-left">
+            <div class="text-opensource">
+              <span class="text-highlight">Open</span>Source
+            </div>
             Occidental College
           </div>
-          <div class="col-6 text-right">
-            <a class="email-link" href="mailto:opensource@oxy.edu">opensource@oxy.edu</a>
+          <div class="col-12 col-sm-6 my-auto text-center text-sm-right">
+            <div style="color: rgba(255,255,255,.60);">
+              1600 Campus Road <br> Los Angeles, CA, 90041
+            </div>
+            <div>
+              <a class="text-highlight" href="mailto:opensource@oxy.edu">opensource@oxy.edu</a>
+            </div>
           </div>
         </div>
+
       </div>
       
     </footer>
