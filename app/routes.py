@@ -8,7 +8,7 @@ import json
 def homepage():
     return render_template('pages/index.html')
 
-@app.route('/about')
+@app.route('/about.html')
 def aboutpage():
     
     with open('app/members.json') as membersfile:
@@ -16,15 +16,15 @@ def aboutpage():
 
     return render_template('pages/about.html', members=members)
 
-@app.route('/events')
+@app.route('/events.html')
 def eventspage():
     return render_template('pages/events.html')
 
-@app.route('/contact')
+@app.route('/contact.html')
 def contactpage():
     return render_template('pages/contact.html')
 
-@app.route('/resources')
+@app.route('/resources.html')
 def resourcespage():
     return render_template('pages/resources.html')
 
