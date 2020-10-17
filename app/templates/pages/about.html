@@ -4,16 +4,16 @@
   <div class="mission-statement py-2">
     Our mission is to create an inclusive and collaborative community around Computer Science and provide resources and opportunities for all Oxy students
   </div>
-  
+
   <div class="eboard container-fluid px-4">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center px-2">
       {% for member in members %}
-      <div class="col-6 col-sm-4col-lg-3 col-xl-2 member px-0">
+      <div class="col-6 col-sm-4col-lg-3 col-xl-2 member font-weight-bold px-2 pb-3">
         <a class="headshot" href="{{ member.ig_eboard }}">
-         <img class="img-fluid" src="{{ member.headshot }}"></img>
+         <img class="img-fluid img-circle" src="{{ member.headshot }}"></img>
         </a>
         {{ member.name }}
-        <div class="title">
+        <div class="title font-weight-normal">
           {{ member.title }}
         </div>
       </div>

@@ -151,15 +151,20 @@ footer {
 }
 
 /* About Page */
+
 .eboard .member {
     display:inline-block;
 }
+
 .headshot {
     width: 250px;
     height: 250px;
 }
+
 .title {
     font-style: italic;
 }
 
-
+.img-circle {
+  border-radius: 100%;
+}
