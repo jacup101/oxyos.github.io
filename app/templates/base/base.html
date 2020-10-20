@@ -5,12 +5,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The home page for the Open Source club at Occidental College, where you can find out more about the club">
 
     {% if title %} <!-- Tests if a title exists, and adds it to the title if found -->
     <title>Oxy Open Source - {{ title }}</title>
     {% else %}
     <title>Oxy Open Source</title>
     {% endif %}
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="/static/css/style.css" rel="stylesheet" />
@@ -23,7 +26,8 @@
       <div class="col-10 offset-1">
         <div class="row">
           <a class="navbar-brand" href="/">
-            <img class="img-fluid" src="/static/img/oxyosLogo.jpg">
+            <img class="img-fluid" src="/static/img/oxyosLogo.jpg" width="52px" height="63px" alt="An image of the Oxy Open Source logo header">
+            <div class="sr-only">Back to Landing Page</div>
           </a>
 
           <button class="navbar-toggler ml-auto my-auto p-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,16 +52,16 @@
               <div class="row m-3 m-sm-0 py-2">
                 <div class="col-sm d-lg-none"></div>
                 <li class="nav-item col-3 col-sm mx-0 mx-lg-2 p-0">
-                  <a class="nav-img" href="https://join.slack.com/t/oxyos/signup"><img class="img-fluid" src="/static/img/slack.svg"></a>
+                  <a class="nav-img" href="https://join.slack.com/t/oxyos/signup"><img class="img-fluid" src="/static/img/slack.svg" width="120px" height="120px"></a>
                 </li>
                 <li class="nav-item col-3 col-sm mx-0 mx-lg-2 p-0">
-                  <a class="nav-img" href="https://github.com/oxyos"><img class="img-fluid" src="/static/img/GitHub-Mark-120px-plus.png"></a>
+                  <a class="nav-img" href="https://github.com/oxyos"><img class="img-fluid" src="/static/img/GitHub-Mark-120px-plus.png" width="120px" height="120px"></a>
                 </li>
                 <li class="nav-item col-3 col-sm mx-0 mx-lg-2 p-0">
-                  <a class="nav-img" href="https://www.facebook.com/oxyopensourceclub"><img class="img-fluid" src="/static/img/f_logo_RGB-Blue_114.png"></a>
+                  <a class="nav-img" href="https://www.facebook.com/oxyopensourceclub"><img class="img-fluid" src="/static/img/f_logo_RGB-Blue_114.png" width="120px" height="120px"></a>
                 </li>
                 <li class="nav-item col-3 col-sm mx-0 mx-lg-2 p-0">
-                  <a class="nav-img" href="https://www.instagram.com/oxyopensource/"><img class="img-fluid" src="/static/img/IG_Glyph_Fill.png"></a>
+                  <a class="nav-img" href="https://www.instagram.com/oxyopensource/"><img class="img-fluid" src="/static/img/IG_Glyph_Fill.webp" width="120px" height="120px"></a>
                 </li>
                 <div class="col-sm d-lg-none"></div>
               </div>
