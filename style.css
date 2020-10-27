@@ -7,35 +7,55 @@
 
 body {
     margin:0;
-    background-image: url('img/2018-0608_JacarandaTrees-07.png');
-    display:flex;
+    /* Location of the image */
+    background-color: white;
+  display:flex;
     flex-direction: column;
     min-height: 100vh;
+
+    font-size: 1em;
+    line-height: 1.5;
 }
 #header {
     display:flex;
     height:100px;
     align-items:center;
-    background:linear-gradient(grey, 10%, rgba(255, 255, 255, 255));
+    background: white;
     font-family: sans-serif;
+    border-bottom: 1px solid #eaecef;
 }
 #logo {
-    height:4em;
-    width:4em;
+    height:3em;
+    width:3em;
     padding-left: 2.5em;
 }
 #nav {
-    display:flex;
-    width:50%;
+    /*display:flex;
+    width:50%; */
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    white-space: nowrap;
+    font-size: .9rem;
+    position: absolute;
+    right: 1.5rem;
+    top: .7rem;
+    display: none;
+    flex-direction: row;
 }
 .nav-item {
     width:25%;
     font-weight:100;
-    font-size: 22px;
+    font-size: 1.5em;
     color: black;
     text-decoration:none;
     text-transform: uppercase;
     padding-top: 1em;
+
+    position: relative;
+    display: inline-block;
+    margin-left: 1.5vw;
+    line-height: 2rem;
 }
 .nav-item:hover, .nav-item:active {
     color: #bb380c;
@@ -43,15 +63,19 @@ body {
 
 #body {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.2em;
     flex:1;
     display:flex;
     flex-direction:column
 }
 #body-column{
-    width: 75%;
+    width: 85%;
     margin: auto;
-    background: #ffffffc0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
 }
 
 #footer {
@@ -85,7 +109,7 @@ body {
 }
 #contact {
     text-align:right;
-    font-size: 16px;
+    font-size: .8em;
     font-weight: 100;
     font-family: sans-serif;
     margin-right:1em;
@@ -96,12 +120,13 @@ body {
 
 /* --- index.html --- */
 #splash {
-    font-size: 50px;
-    text-transform: uppercase;
-    font-weight: bold;
+   /* font-size: 50px; */
+   display: inline-block;
+  /*  text-transform: uppercase;
+    font-weight: bold; */
     margin:auto;
     text-align:left;
-    line-height: 100px;
+  /*  line-height: 100px; */
     text-align: center;
 }
 
@@ -112,6 +137,7 @@ body {
 /* --- about.html --- */
 #eboard .member {
     display:inline-block;
+    min-width: 300px;
 }
 #eboard .headshot {
     width: 250px;
@@ -120,5 +146,69 @@ body {
 #eboard .title {
     font-style: italic;
 }
+#nav-mob {
+    /*display:flex;
+    width:50%; */
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    white-space: nowrap;
+    font-size: .9rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 5em;
+    display: none;
+    flex-direction: column;
+}
 
+/* have this dropdown btn be the default until a certain min-width */
+#dropdown-btn {
+    right: 1.5rem;
+    font-size: 2em;
+    position: absolute;
+}
+/* medium screen width, 1024px */
+@media (min-width: 64em) {
+    body {
+        font-size: calc(1*1.2em);
+        line-height: calc(1*1.2);
+    }
+    #dropdown-btn {
+        display: none;
+    }
 
+    #nav-mob {
+        display: none;
+    }
+    #nav {
+        display: flex;
+    }
+}
+
+/* large screen width, 1366px */
+@media (min-width: 85.375em) {
+    body {
+        font-size: calc(1*1.3em);
+    }
+}
+
+/* xlarge screen width, 1920px */
+@media (min-width: 120em) {
+    body {
+        font-size: calc(1*1.4em);
+    }
+}
+
+/* xxlarge screen width, 2560px */
+@media (min-width: 160em) {
+    body {
+        font-size: calc(1*1.6em);
+    }
+}
+
+/* xxxlarge screen width, 3200px */
+@media (min-width: 200em) {
+    body {
+        font-size: calc(1*1.8em);
+    }
+}

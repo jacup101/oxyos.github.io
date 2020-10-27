@@ -6,12 +6,20 @@
     <title>Oxy Open Source</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   </head>
 
   <body>
     <div id="header">
       <a href="index.html"><img id="logo" src="img/oxyosLogo.jpg"></a>
-      <div class="spacer"></div>
+      <i id = "dropdown-btn" class="fas fa-bars" onclick="openDropdown()"></i>
+      <div id="nav-mob">
+        <a class="nav-item" href="contact.html">Contact</a>
+        <a class="nav-item" href="about.html">About Us</a>
+        <a class="nav-item" href="resources.html">Resources</a>
+        <a class="nav-item" href="events.html">Events</a>
+      </div>
       <div id="nav">
         <a class="nav-item" href="contact.html">Contact</a>
         <a class="nav-item" href="about.html">About Us</a>
@@ -20,12 +28,10 @@
       </div>
     </div>
     <div id="body">
-      <div class="spacer"></div>
       <!-- removed id = "body-column" in div below since opaque grey box looked strange behind calendar -->
-      <div>
-        <iframe src="https://calendar.google.com/calendar/embed?src=opensource%40oxy.edu&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      <div id = "body-column">
+        <iframe src="https://calendar.google.com/calendar/embed?src=opensource%40oxy.edu&ctz=America%2FLos_Angeles" style="border: 0; width: 40em; height: 30em;" frameborder="0" scrolling="no"></iframe>
       </div>
-      <div class="spacer"></div>
     </div>
     <div id="footer">
       <div id="social-media">
@@ -47,5 +53,15 @@
       </div>
     </div>
   </body>
-
+  <script>
+    function openDropdown() {
+      if (document.getElementById("nav-mob").style.display == "flex") {
+        document.getElementById("nav-mob").style.display = "none";
+      }
+      else {
+        document.getElementById("nav-mob").style.display = "flex";
+        document.getElementById("nav-mob").style.flexDirection = "column";
+      }
+    }
+  </script>
 </html>

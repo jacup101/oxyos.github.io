@@ -6,12 +6,20 @@
     <title>Oxy Open Source</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   </head>
 
   <body>
     <div id="header">
       <a href="index.html"><img id="logo" src="img/oxyosLogo.jpg"></a>
-      <div class="spacer"></div>
+      <i id = "dropdown-btn" class="fas fa-bars" onclick="openDropdown()"></i>
+      <div id="nav-mob">
+        <a class="nav-item" href="contact.html">Contact</a>
+        <a class="nav-item" href="about.html">About Us</a>
+        <a class="nav-item" href="resources.html">Resources</a>
+        <a class="nav-item" href="events.html">Events</a>
+      </div>
       <div id="nav">
         <a class="nav-item" href="contact.html">Contact</a>
         <a class="nav-item" href="about.html">About Us</a>
@@ -20,20 +28,27 @@
       </div>
     </div>
     <div id="body">
-      <div class="spacer"></div>
       <div id="body-column">
         <div id="splash">
-          <h1 class="wordmark" style = "margin-bottom: 0px; display: inline-block;">
-            Oxy<br>
-            <span>Open</span><br>
-            Source
+          <h1 class="wordmark" style = "display: inline-block;">
+            Oxy <span>Open</span> Source
           </h1>
+          <div class="homeText">
+            <div style = "width: 40vw; display: inline-block;">Our mission is to create an inclusive and collaborative community around Computer Science and provide resources and opportunities for all Oxy students</div>
+          </div>
         </div>
-        <div class="homeText">
-          <p style = "width: 40vw; display: inline-block;">Our mission is to create an inclusive and collaborative community around Computer Science and provide resources and opportunities for all Oxy students</p>
+
+        <div id="splash">
+          <h1 class="wordmark">
+            What we do
+          </h1>
+            <div>&#9989; Throw a social hour every Friday</div>
+            <div>&#9989; Host an event every 2 weeks</div>
+            <div>&#9989; Oversee the completion of 4 open source projects, annually</div>
+            <div>&#9989; Hold Workspace, a hub for collaboration, 2x a week</div>
+            <div>&#9989; Voice student input in CS department meetings</div>
         </div>
       </div>
-      <div class="spacer"></div>
     </div>
     <div id="footer">
       <div id="social-media">
@@ -55,5 +70,16 @@
       </div>
     </div>
   </body>
-
+<script>
+  function openDropdown() {
+    if (document.getElementById("nav-mob").style.display == "flex") {
+      document.getElementById("nav-mob").style.display = "none";
+    }
+    else {
+      document.getElementById("nav-mob").style.display = "flex";
+      document.getElementById("nav-mob").style.flexDirection = "column";
+    }
+  }
+</script>
 </html>
+
