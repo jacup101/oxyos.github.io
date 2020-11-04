@@ -87,7 +87,7 @@ nav {
 .content-box{
     min-height: 30vh;
     border-radius: 5px;
-    background: #ffffffc0;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 /* Footer */
