@@ -14,19 +14,19 @@ def aboutpage():
     with open('app/members.json') as membersfile:
         members = json.load(membersfile)
 
-    return render_template('pages/about.html', members=members)
+    return render_template('pages/about.html', members=members, activePage='about') # activePage variable used to bold the link of the current page on the navbar
+
+@app.route('/what-we-do/')
+def whatwedopage():
+    return render_template('pages/what-we-do.html', activePage='what-we-do')
 
 @app.route('/events/')
 def eventspage():
-    return render_template('pages/events.html')
-
-@app.route('/contact/')
-def contactpage():
-    return render_template('pages/contact.html')
+    return render_template('pages/events.html', activePage='events')
 
 @app.route('/resources/')
 def resourcespage():
-    return render_template('pages/resources.html')
+    return render_template('pages/resources.html', activePage='resources')
 
 # Static resources
 

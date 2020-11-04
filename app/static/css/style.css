@@ -113,6 +113,20 @@ footer {
     display: inline-block;
 }
 
+.what-we-do-button {
+  border: none;
+  height: 4rem;
+  border-radius: 7px;
+  background: #fd7346; /* Still here for older browsers */
+  background: linear-gradient(145deg, #ff7b4b, #e4683f);
+  font-weight: bold;
+  outline: none;
+}
+
+.what-we-do-button:focus {
+  outline: none;
+}
+
 @media (max-width: 575.98px) {
     .landing-text {
         font-size: 5rem;
@@ -164,4 +178,11 @@ footer {
 
 .img-circle {
   border-radius: 100%;
+}
+
+/* What we do page */
+
+.activity {
+  font-size: 1.25rem;
+  margin: 1rem 0;
 }

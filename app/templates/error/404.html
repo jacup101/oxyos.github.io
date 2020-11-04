@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    404 Not Found
-</body>
-</html>
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="col-md-12">
+  <h1 class="landing-text my-5">
+    4<span class="text-highlight">0</span>4
+  </h1>
+
+  <div class="px-md-5 mx-auto mission-statement pb-4">Page not found. But, we're very curious how you got here! So, if you want to tell us why, please contact us at <a href="mailto:opensource@oxy.edu">opensource@oxy.edu</a></div>
+
+</div>
+{% endblock %}
