@@ -11,7 +11,7 @@ def homepage():
 @app.route('/about/')
 def aboutpage():
 
-    with open('app/members.json') as membersfile:
+    with open('src/app/members.json') as membersfile:
         members = json.load(membersfile)
 
     return render_template('pages/about.html', members=members, activePage='about') # activePage variable used to bold the link of the current page on the navbar
