@@ -18,7 +18,7 @@
 
 # Running the Site For Development
 1. To develop, run the following command to start the built-in flask web server:
-    1. MacOS/Linux: `make`
+    1. MacOS/Linux: `make clean`
     1. Windows: `python3 src/main.py`
 1. This will start the server on port `5000` on your machine, open any browser (Chrome, Firefox, Safari, etc...) and navigate to `localhost:5000`
 
