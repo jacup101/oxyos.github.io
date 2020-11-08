@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Dyani Dillard",
+        "headshot": "/static/img/dyani_photo.jpg",
+        "title": "Co-President",
+        "ig_eboard": "https://www.instagram.com/p/CEpHN2EjKhM/"
+    },
+    {
+        "name": "Joey Rose",
+        "headshot": "/static/img/joey_photo.jpg",
+        "title": "Co-President",
+        "ig_eboard": "https://www.instagram.com/p/CE91yDcjLAk/"
+    },
+    {
+        "name": "Scott Morris",
+        "headshot": "/static/img/scott_photo.jpeg",
+        "title": "Head of Events",
+        "ig_eboard": "https://www.instagram.com/p/CFNRZfPDbmD/"
+    },
+    {
+        "name": "Tammie Oh",
+        "headshot": "/static/img/tammy_photo.JPG",
+        "title": "Marketing & Finance",
+        "ig_eboard": "https://www.instagram.com/p/CFfZqYXD9N_/"
+    },
+    {
+        "name": "Ruth Schlosser",
+        "headshot": "/static/img/ruth_photo.jpg",
+        "title": "Head of Projects",
+        "ig_eboard": "https://www.instagram.com/p/CFxUnHbjUik/"
+    },
+    {
+        "name": "Ali Mian",
+        "headshot": "/static/img/ali_photo.jpg",
+        "title": "Local Engagement",
+        "ig_eboard": "https://www.instagram.com/p/CGVjCLND9ri/"
+    },
+    {
+        "name": "Jasmine Reyes",
+        "headshot": "/static/img/jasmine_photo.jpg",
+        "title": "Community Outreach",
+        "ig_eboard": "https://www.instagram.com/oxyopensource/"
+    }
+]
