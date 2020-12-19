@@ -6,12 +6,21 @@
 
 body {
     margin:0;
-    background-image: url('../img/2018-0608_JacarandaTrees-07.webp');
+
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Nunito', sans-serif;
     min-height: 100vh;
     flex-direction: column;
     display: flex;
+}
+
+/* WebP fallback for non-blink browsers */
+.no-webp body {
+  background-image: url('../img/2018-0608_JacarandaTrees-07.png');
+}
+
+.webp body {
+  background-image: url('../img/2018-0608_JacarandaTrees-07.webp');
 }
 
 nav {
