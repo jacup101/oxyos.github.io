@@ -18,27 +18,33 @@
         "ig_eboard": "https://www.instagram.com/p/CFNRZfPDbmD/"
     },
     {
-        "name": "Tammie Oh",
-        "headshot": "/static/img/tammy_photo.JPG",
-        "title": "Marketing & Finance",
-        "ig_eboard": "https://www.instagram.com/p/CFfZqYXD9N_/"
+        "name": "Kameron Mohebbi",
+        "headshot": "/static/img/kameron_photo.jpg",
+        "title": "Head of Marketing & Finance",
+        "ig_eboard": ""
     },
     {
-        "name": "Ruth Schlosser",
-        "headshot": "/static/img/ruth_photo.jpg",
-        "title": "Head of Projects",
-        "ig_eboard": "https://www.instagram.com/p/CFxUnHbjUik/"
+        "name": "Kathy Liu",
+        "headshot": "/static/img/kathy_photo.jpg",
+        "title": "Co-Head of Projects",
+        "ig_eboard": ""
     },
     {
-        "name": "Ali Mian",
-        "headshot": "/static/img/ali_photo.jpg",
-        "title": "Local Engagement",
-        "ig_eboard": "https://www.instagram.com/p/CGVjCLND9ri/"
+        "name": "Joshua Pulido",
+        "headshot": "/static/img/joshua_photo.jpg",
+        "title": "Co-Head of Projects",
+        "ig_eboard": ""
+    },
+    {
+        "name": "Bryce Boyle",
+        "headshot": "/static/img/bryce_photo.jpg",
+        "title": "Co-Head of Community Engagement",
+        "ig_eboard": ""
     },
     {
         "name": "Jasmine Reyes",
         "headshot": "/static/img/jasmine_photo.jpg",
-        "title": "Community Outreach",
+        "title": "Co-Head of Community Engagement",
         "ig_eboard": "https://www.instagram.com/oxyopensource/"
     }
 ]
